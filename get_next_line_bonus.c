@@ -1,4 +1,4 @@
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	get_len_to_malloc(char buf[BUFFER_SIZE + 1], char *previous_line)
 {
@@ -18,7 +18,7 @@ char	*join_to_nl(char *previous_line, char buf[BUFFER_SIZE + 1])
 	int		i;
 	int		j;
 
-	new = ft_calloc(sizeof(char), get_len_to_malloc(buf, previous_line));
+	new = malloc(sizeof(char) * get_len_to_malloc(buf, previous_line));
 	if (new == NULL)
 		return (ft_free(&previous_line));
 	i = 0;
@@ -62,25 +62,25 @@ int	clear_buf(char *buf)
 
 char	*get_next_line(int fd)
 {
-	static char	buf[BUFFER_SIZE + 1];
+	static char	buf[OPEN_MAX][BUFFER_SIZE + 1];
 	char		*line;
 	int			nb_read;
 
-	if (fd == -1 || BUFFER_SIZE <= 0)
+	if (fd == -1 || BUFFER_SIZE <= 0 || fd >= OPEN_MAX)
 		return (NULL);
 	line = NULL;
 	nb_read = 1;
 	while (nb_read > 0)
 	{
-		if (buf[0] != '\0')
+		if (buf[fd][0] != '\0')
 		{
-			line = join_to_nl(line, buf);
+			line = join_to_nl(line, buf[fd]);
 			if (line == NULL)
 				return (NULL);
-			if (clear_buf(buf) != -1)
+			if (clear_buf(buf[fd]) != -1)
 				break ;
 		}
-		nb_read = read(fd, buf, BUFFER_SIZE);
+		nb_read = read(fd, buf[fd], BUFFER_SIZE);
 		if (nb_read == -1)
 			return (ft_free(&line));
 	}

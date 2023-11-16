@@ -6,11 +6,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
+# include <limits.h>
 
 char	*get_next_line(int fd);
-int		clear_buf(char *buf);
+void	strlcpy_gnl(char *dst, const char *src, size_t dstsize);
 char	*join_to_nl(char *previous_line, char buf[BUFFER_SIZE + 1]);
-int		get_len_to_malloc(char buf[BUFFER_SIZE + 1], char *previous_line);
 char	*ft_free(char **s);
 size_t	ft_strlen(const char *s);
 int		ft_strchr_index(const char *s, int tofind);

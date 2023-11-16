@@ -1,0 +1,42 @@
+with pas toujours de \n dans buf :
+
+Attablé à la terrasse d’un grand Café
+Dégustant, savourant ce bon moment de paix
+L’homme, naguère tranquille, est absorbé
+Malgré le tintamarre, malgré le grand bruit
+
+Sa plume frêle zigzague sur une page
+Il y transcrit des songes et de beaux rivages
+Des horizons lointains et de belles plages
+Rien autour de lui ne le trouble, ni l’ennuie
+
+Sa muse si lancinante le met en transe
+Ses doigts dynamisés frétillent en cadence
+Ses yeux brillants ne clignent plus, en permanence
+Ses vers sont un bijou qui scintille et reluit
+
+Et puis tout d’un coup son corps se rassérène
+Son coeur jubile et son âme devient amène
+Son visage se déride par cette aubaine
+Car lui seul de ce beau poème se réjouit
+
+
+with beaucoup de \n dans buf :
+
+bonjour
+jubile
+m'appelle
+absorbé
+amène
+yeux
+qui
+with
+en
+
+
+
+terrasse
+page
+paix
+
+random
