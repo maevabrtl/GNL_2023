@@ -1,5 +1,3 @@
-with pas toujours de \n dans buf :
-
 Attablé à la terrasse d’un grand Café
 Dégustant, savourant ce bon moment de paix
 L’homme, naguère tranquille, est absorbé
@@ -19,24 +17,3 @@ Et puis tout d’un coup son corps se rassérène
 Son coeur jubile et son âme devient amène
 Son visage se déride par cette aubaine
 Car lui seul de ce beau poème se réjouit
-
-
-with beaucoup de \n dans buf :
-
-bonjour
-jubile
-m'appelle
-absorbé
-amène
-yeux
-qui
-with
-en
-
-
-
-terrasse
-page
-paix
-
-random
